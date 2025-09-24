@@ -1,12 +1,15 @@
 {
   "name": "cinefy",
   "version": "1.0.0",
+  "type": "module",
   "description": "A Entertaining Website",
   "main": "index.js",
   "devDependencies": {
     "nodemon": "^3.1.10"
   },
   "scripts": {
+    "start": "node Server/server.js",
+    "dev": "nodemon Server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Dola138/Cinefy/issues"
   },
-  "homepage": "https://github.com/Dola138/Cinefy#readme"
+  "homepage": "https://github.com/Dola138/Cinefy#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2"
+  }
 }
